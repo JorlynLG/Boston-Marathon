@@ -46,8 +46,24 @@ I separately extracted gender information because it was not provided on the ind
 Refer to the following [script](https://github.com/JorlynLG/Boston-Marathon/blob/main/Marathon_Data_Scraping.ipynb 'Link to script') for more information. 
 
 ## Step 2: Cleaning and Transformation
-In this step, I loaded the CSV file into Jupyter Notebook and carried out data cleaning and transformation activities prior to organizing them into fact and dim tables.
+In this step, I loaded the dataframe created in Step #1 into Jupyter Notebook and carried out data cleaning and transformation activities required for futher analysis.
 
-## Step 3: Analysis
+[Link to the script](https://github.com/JorlynLG/Boston-Marathon/blob/main/marathon_data_cleaning.ipynb 'Link to script')
+
+Data cleaning and transformation included:
+* Drop duplicate entries
+* Replacing all blank values
+* Removing all entried where the runner did not complete the race or was disqualified
+* Replacing all number values with integer type
+* Replacing all time entries with a datetime
+* Replacing all time splits with a deltatime
+
+Refer to the following [script](https://github.com/JorlynLG/Boston-Marathon/blob/main/marathon_data_cleaning.ipynb 'Link to script') for more information. 
+
+## Step 3: EDA (Exploratory Data Analysis)
 
 ## Step 4: Dashboard
+After completing the analysis, I created a separate dashboard to descibe the overall resulst of the race, which you can view [here](https://public.tableau.com/app/profile/jay.lee4373/viz/BostonMarathon_17170155415420/MarathonDashboard).
+This dashboard focuses on the overall statistics of the race and not the analysis which was performed in the EDA stage.
+![image](https://github.com/JorlynLG/Boston-Marathon/assets/39361211/95f7e39a-7341-4837-a729-f53c6d12fbd5)
+
